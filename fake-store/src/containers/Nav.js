@@ -25,10 +25,10 @@ export default function Nav() {
 				bg="light"
 			>
 				<Container >
-					<Navbar.Brand href="#"><u>About us</u></Navbar.Brand>
-					<Navbar.Brand href="#"><u>Contact</u></Navbar.Brand>
+					<Navbar.Brand href="/aboutus"><u>About us</u></Navbar.Brand>
+					<Navbar.Brand href="/contact"><u>Contact</u></Navbar.Brand>
 					<Navbar.Brand href="#"><u>Meet our brands</u></Navbar.Brand>
-					<Navbar.Brand href="#"><u>Our team</u></Navbar.Brand>
+					<Navbar.Brand href="/"><u>Back to main</u></Navbar.Brand>
 					
 				</Container>
 			</Navbar>

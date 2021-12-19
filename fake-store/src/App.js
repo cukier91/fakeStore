@@ -1,22 +1,21 @@
 import "./App.css";
-import {Card, Button} from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from "./containers/Nav";
+import ProductsList from "./containers/ProductsList";
+import AboutUs from "./containers/AboutUs";
+import Contact from "./containers/Contact";
+import { BrowserRouter as Routers, Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
-		<div className="App">
-			<Card style={{ width: "18rem"}}>
-				<Card.Img variant="top" src="https://cdn.pixabay.com/photo/2017/09/15/08/01/leather-case-2751381_960_720.png" />
-				<Card.Body>
-					<Card.Title>Card Title</Card.Title>
-					<Card.Text>
-						Some quick example text to build on the card title and make up the
-						bulk of the card's content.
-					</Card.Text>
-					<Button variant="primary">Go somewhere</Button>
-				</Card.Body>
-			</Card>
-		</div>
+		<Routers>
+			<Nav />
+			<Routes>
+				<Route path="/" exact element={<ProductsList/>}>
+        </Route>
+        <Route path="aboutus" element={<AboutUs/>}/>
+        <Route path="contact" element={<Contact/>}/>
+			</Routes>
+		</Routers>
 	);
 }
 
