@@ -18,7 +18,7 @@ export default function ProductDetail() {
 				console.log("Error", err);
 			});
 		dispatch(selectedProduct(rensponse));
-		console.log(rensponse);
+		
 	};
 
 	useEffect(() => {
