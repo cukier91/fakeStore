@@ -21,9 +21,7 @@ export default function ProductsList() {
 		fetchProduct();
 	}, []);
 
-    console.log('products', products)
+	console.log("products", products);
 
-	return (
-		<Product/>
-	);
+	return <Product />;
 }
