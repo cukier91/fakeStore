@@ -38,7 +38,7 @@ export default function Product() {
 								</Card.Text>
 							</Card.Body>
 
-							<Button variant="primary">{price} $</Button>
+							<Button variant="primary">Buy {price} $</Button>
 						</div>
 					</Col>
 				);

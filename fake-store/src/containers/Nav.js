@@ -19,17 +19,20 @@ export default function Nav() {
 				/>
 				<h3 style={{ marginTop: "10px" }}>Fake shop</h3>
 			</div>
-			<Navbar
-				expand="lg"
-				variant="light"
-				bg="light"
-			>
-				<Container >
-					<Navbar.Brand href="/aboutus"><u>About us</u></Navbar.Brand>
-					<Navbar.Brand href="/contact"><u>Contact</u></Navbar.Brand>
-					<Navbar.Brand href="/brands"><u>Meet our brands</u></Navbar.Brand>
-					<Navbar.Brand href="/"><u>Back to main</u></Navbar.Brand>
-					
+			<Navbar expand="lg" variant="light" bg="light">
+				<Container>
+					<Navbar.Brand href="/">
+						<u>Shop</u>
+					</Navbar.Brand>
+					<Navbar.Brand href="/aboutus">
+						<u>About us</u>
+					</Navbar.Brand>
+					<Navbar.Brand href="/contact">
+						<u>Contact</u>
+					</Navbar.Brand>
+					<Navbar.Brand href="/brands">
+						<u>Meet our brands</u>
+					</Navbar.Brand>
 				</Container>
 			</Navbar>
 		</>
