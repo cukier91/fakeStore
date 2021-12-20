@@ -7,6 +7,7 @@ import Brands from "./containers/Brands";
 import { BrowserRouter as Routers, Routes, Route } from "react-router-dom";
 import Product from "./containers/Product";
 import NotFound from "./containers/NotFound";
+import ProductDetail from "./containers/ProductDetail";
 
 function App() {
 	return (
@@ -14,8 +15,8 @@ function App() {
 			<Nav />
 			<Routes>
 				<Route path="/" element={<ProductsList />}/>
-				<Route exact path="product" element={<Product />}>
-					<Route exact path=":productId" element={<Product />} />
+				<Route exact path="product" element={<ProductDetail />}>
+					<Route exact path=":productId" element={<ProductDetail />} />
 				</Route>
 				<Route path="aboutus" element={<AboutUs />} />
 				<Route path="contact" element={<Contact />} />
