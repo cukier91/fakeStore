@@ -27,7 +27,7 @@ export default function Nav() {
 				<Container >
 					<Navbar.Brand href="/aboutus"><u>About us</u></Navbar.Brand>
 					<Navbar.Brand href="/contact"><u>Contact</u></Navbar.Brand>
-					<Navbar.Brand href="#"><u>Meet our brands</u></Navbar.Brand>
+					<Navbar.Brand href="/brands"><u>Meet our brands</u></Navbar.Brand>
 					<Navbar.Brand href="/"><u>Back to main</u></Navbar.Brand>
 					
 				</Container>
