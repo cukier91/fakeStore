@@ -11,9 +11,9 @@ export default function AboutUs() {
                     
 				}}
 			>
-                <img src="https://cdn.pixabay.com/photo/2019/12/17/17/09/woman-4702060_960_720.jpg" style={{float:"left",width:'55%', margin: '0 20px 5px 0'}}/>
+                <img src="https://cdn.pixabay.com/photo/2019/12/17/17/09/woman-4702060_960_720.jpg" style={{float:"left",width:'55%', margin:'auto'}}/>
 				
-				<p style={{textIndent:'2em', textAlign:'justify' }}>
+				<p style={{textAlign:'justify' }}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
 					impedit odio iste maxime doloribus ab a veniam? Nesciunt possimus
 					voluptatibus cumque iusto voluptatem aperiam amet repellendus dicta,
