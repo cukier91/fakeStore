@@ -49,27 +49,20 @@ export default function ProductDetail() {
 					/>
 				</div>
 			) : (
-				<div style={{ display: "flex" }}>
+			
 					<Card
 						style={{
 							height: "auto",
-							maxWidth: "25%",
+							maxWidth: "45%",
 							display: "block",
 							marginLeft: "auto",
+							marginRight:'auto',
 							marginTop: "2%",
+							marginBottom:'2%'
 						}}
 					>
 						<Card.Img variant="top" src={product.image} />
-					</Card>
-					<Card
-						style={{
-							height: "auto",
-							maxWidth: "25%",
-							display: "block",
-							marginRight: "auto",
-							marginTop: "2%",
-						}}
-					>
+					
 						<Card.Body>
 							<Card.Title>{product.title}</Card.Title>
 							<Card.Text>{product.description}</Card.Text>
@@ -84,7 +77,7 @@ export default function ProductDetail() {
 							</Button>
 						</ListGroup>
 					</Card>
-				</div>
+			
 			)}
 		</div>
 	);
