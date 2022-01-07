@@ -53,7 +53,7 @@ export default function ProductDetail() {
 					<Card
 						style={{
 							height: "auto",
-							maxWidth: "35rem",
+							maxWidth: "45%",
 							display: "block",
 							marginLeft: "auto",
 							marginRight:'auto',

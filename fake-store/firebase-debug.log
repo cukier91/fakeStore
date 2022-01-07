@@ -1,0 +1,94 @@
+[debug] [2022-01-07T13:02:38.742Z] ----------------------------------------------------------------------
+[debug] [2022-01-07T13:02:38.743Z] Command:       /home/bartosz/.nvm/versions/node/v16.10.0/bin/node /home/bartosz/.nvm/versions/node/v16.10.0/bin/firebase deploy
+[debug] [2022-01-07T13:02:38.744Z] CLI Version:   9.23.3
+[debug] [2022-01-07T13:02:38.744Z] Platform:      linux
+[debug] [2022-01-07T13:02:38.744Z] Node Version:  v16.10.0
+[debug] [2022-01-07T13:02:38.744Z] Time:          Fri Jan 07 2022 14:02:38 GMT+0100 (czas środkowoeuropejski standardowy)
+[debug] [2022-01-07T13:02:38.744Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-07T13:02:38.795Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-07T13:02:38.795Z] > authorizing via signed-in user (konarowski.bartosz@gmail.com)
+[debug] [2022-01-07T13:02:38.795Z] [iam] checking project fakestore-ea322 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-07T13:02:38.797Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fakestore-ea322:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-07T13:02:39.800Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 07 Jan 2022 13:02:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=686","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-07T13:02:39.804Z] > refreshing access token with scopes: []
+[debug] [2022-01-07T13:02:39.804Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-07T13:02:39.987Z] <<< HTTP RESPONSE 200 {"date":"Fri, 07 Jan 2022 13:02:39 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-07T13:02:40.010Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fakestore-ea322 [none]
+[debug] [2022-01-07T13:02:40.421Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fakestore-ea322 200
+[debug] [2022-01-07T13:02:40.422Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fakestore-ea322 {"projectId":"fakestore-ea322","projectNumber":"139012007098","displayName":"FakeStore","name":"projects/fakestore-ea322","resources":{"hostingSite":"fakestore-ea322"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'fakestore-ea322'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-01-07T13:02:40.427Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-07T13:02:40.427Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-07T13:02:40.588Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 07 Jan 2022 13:02:39 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-07T13:02:40.592Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fakestore-ea322/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}],"headers":[{"glob":"/service-worker.js","headers":{"Cache-Control":"no-cache"}}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-01-07T13:02:41.947Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 07 Jan 2022 13:02:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[fakestore-ea322]: beginning deploy... 
+[info] i  hosting[fakestore-ea322]: found 7 files in build 
+[debug] [2022-01-07T13:02:42.103Z] > refreshing access token with scopes: []
+[debug] [2022-01-07T13:02:42.103Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-07T13:02:42.104Z] [hosting] hash cache [YnVpbGQ] stored for 7 files
+[debug] [2022-01-07T13:02:42.104Z] [hosting][hash queue][FINAL] {"max":137,"min":6,"avg":29.857142857142858,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":143}
+[debug] [2022-01-07T13:02:42.272Z] <<< HTTP RESPONSE 200 {"date":"Fri, 07 Jan 2022 13:02:41 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-07T13:02:42.279Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/fakestore-ea322/versions/b0869f8cb8876b16:populateFiles [none]
+[debug] [2022-01-07T13:02:42.279Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/fakestore-ea322/versions/b0869f8cb8876b16:populateFiles {"files":{"/asset-manifest.json":"b8a5ea688a76ce30d76fbc81b7715aabc5c68309dfed1f349ba19db15503e131","/index.html":"4600d2409046467217129e6c586f3a681db18922015c5f223847e62c1882df77","/static/js/main.952f6ca8.js.LICENSE.txt":"7a0f8b91651fcef78ab2e25915026876584355b63c5857189a99c19344d08c82","/static/css/main.647078a0.css":"268cc2f5922a25ce823b23fc0d8f8d1cdb9aef7d900196de6ef85ae0bffd70f2","/static/js/main.952f6ca8.js":"3d6b98b6ea0fc85b6c6fcf2b3ed4cb7ffb9d129a0ab26d82f637e9c416aabbd7","/static/css/main.647078a0.css.map":"55105f3236205ace1d43b5a0e1ec6540182014a7aa7b47f2b67e3489e176aae9","/static/js/main.952f6ca8.js.map":"8d38084872eca0fda686219ffcc56d0058519f85471bfac935fd7e7571940616"}}
+[debug] [2022-01-07T13:02:43.485Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/fakestore-ea322/versions/b0869f8cb8876b16:populateFiles 200
+[debug] [2022-01-07T13:02:43.485Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/fakestore-ea322/versions/b0869f8cb8876b16:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/fakestore-ea322/versions/b0869f8cb8876b16/files"}
+[debug] [2022-01-07T13:02:43.486Z] [hosting][populate queue][FINAL] {"max":1383,"min":1383,"avg":1383,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1383}
+[debug] [2022-01-07T13:02:43.486Z] [hosting] uploads queued: 0
+[debug] [2022-01-07T13:02:43.486Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1641560563486}
+[info] ✔  hosting[fakestore-ea322]: file upload complete 
+[debug] [2022-01-07T13:02:43.487Z] [hosting] deploy completed after 1538ms
+[debug] [2022-01-07T13:02:43.490Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "/service-worker.js",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        }
+      ],
+      "site": "fakestore-ea322"
+    },
+    "site": "fakestore-ea322",
+    "version": "sites/fakestore-ea322/versions/b0869f8cb8876b16"
+  }
+]
+[info] i  hosting[fakestore-ea322]: finalizing version... 
+[debug] [2022-01-07T13:02:43.491Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-07T13:02:43.491Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-07T13:02:43.662Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 07 Jan 2022 13:02:42 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-07T13:02:43.668Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/fakestore-ea322/versions/b0869f8cb8876b16?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2022-01-07T13:02:44.812Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 07 Jan 2022 13:02:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-07T13:02:44.813Z] [hosting] finalized version for fakestore-ea322: {"name":"sites/fakestore-ea322/versions/b0869f8cb8876b16","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"no-cache"},"glob":"/service-worker.js"}],"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-01-07T13:02:40.581180Z","createUser":{"email":"konarowski.bartosz@gmail.com"},"finalizeTime":"2022-01-07T13:02:43.806043Z","finalizeUser":{"email":"konarowski.bartosz@gmail.com"}}
+[info] ✔  hosting[fakestore-ea322]: version finalized 
+[info] i  hosting[fakestore-ea322]: releasing new version... 
+[debug] [2022-01-07T13:02:44.814Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/fakestore-ea322/releases?version_name=sites/fakestore-ea322/versions/b0869f8cb8876b16  
+ {"message":null}
