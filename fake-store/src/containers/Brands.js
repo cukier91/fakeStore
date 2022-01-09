@@ -17,9 +17,9 @@ export default function Brands() {
 		<ul
 			style={{
 				listStyleType: "none",
-				marginTop: "5rem",
-				marginLeft: "15rem",
-				marginRight: "15rem",
+				marginTop: "3%",
+				marginLeft: "auto",
+				marginRight: "auto",
 				display: "flex",
 				justifyContent: "space-around",
 			}}

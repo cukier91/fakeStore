@@ -23,9 +23,9 @@ export default function Contact() {
 		{
 			name: "Adam Nowak",
 			image:
-				"https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699_960_720.jpg",
+				"https://cdn.pixabay.com/photo/2015/07/20/12/57/ambassador-852766_960_720.jpg",
 			phone: "111-222-333",
-			title: "Customer service",
+			title: "Technical support",
 			description:
 				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos autem ducimus saepe odit sequi praesentium cupiditate, voluptate similique sint delectus qui suscipit, quaerat deserunt dicta illum.",
 			email: "anowak@store.eu",
@@ -43,7 +43,7 @@ export default function Contact() {
 		{
 			name: "Aneta Morris",
 			image:
-				"https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909_960_720.jpg",
+				"https://cdn.pixabay.com/photo/2015/03/03/18/58/woman-657753_960_720.jpg",
 			phone: "111-222-333",
 			title: "Co-owner",
 			description:
@@ -56,7 +56,7 @@ export default function Contact() {
 
 			<Row
 				lg={4}
-				style={{ marginTop: "2%", marginLeft: "auto", marginRight: "auto" }}
+				
 			>
 				{workers.map(({ image, title, description, name, phone, email }) => {
 					return (
@@ -66,18 +66,20 @@ export default function Contact() {
 									width: "18rem",
 									height: "auto",
 									alignContent: "space-around",
-									marginBottom: "1rem",
+									marginLeft:'auto',
+									marginRight:'auto',
+									marginTop:'4%'
 								}}
 							>
 								<Card.Img
 									variant="top"
 									src={image}
-									style={{ width: "18rem", height:'23rem' }}
+									style={{ width: "18rem"}}
 								/>
 
 								<Card.Body>
 									<Card.Title>{title}</Card.Title>
-									<Card.Text style={{ width: "16rem", height: "10rem" }}>
+									<Card.Text style={{ width: "16rem"}}>
 										{description}
 									</Card.Text>
 									<ListGroup className="list-group-flush">
